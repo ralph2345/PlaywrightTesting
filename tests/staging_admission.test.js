@@ -87,13 +87,13 @@ test('test', async ({ page }) => {
   await page.locator('.MuiBackdrop-root').click();
   //await page.getByLabel('', { exact: true }).click();
   await page.locator('[id="academic_program_(first_choice)"]').click();
-  await page.getByText('Doctor of Medicine').click();
+  await page.getByText('Bachelor of Science in Psychology').click();
 
   //second choice
   await page.locator('[id="campus_(second_choice)"]').click();
-  await page.getByRole('option', { name: 'San Rafael' }).click();
+  await page.getByRole('option', { name: 'Malolos' }).click();
   await page.locator('[id="academic_program_(second_choice)"]').click();
-  await page.getByText('Bachelor of Science in Biology').click();
+  await page.getByText('Bachelor of Industrial Technology').click();
   await page.getByRole('textbox', { name: 'How did you know about the' }).click();
   await page.getByRole('textbox', { name: 'How did you know about the' }).fill('a');
   await page.getByRole('textbox', { name: 'Reason for Applying' }).click();
